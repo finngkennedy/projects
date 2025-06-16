@@ -410,3 +410,7 @@ plt.ylabel('M')
 plt.show()
 '''
 
+#edit this based on what plot you want to export.
+output_filename = "name.csv"
+np.savetxt(output_filename, avg_array, delimiter=",")
+print(f"Data exported to {output_filename}")
